@@ -1,0 +1,270 @@
+<ul class="nav nav-tabs md-pills pills-ins flex-center" role="tablist">
+  <li class="nav-item">
+    <div style="width: 380px;">
+      <a class="nav-link active" data-toggle="tab" href="#panel10" role="tab">
+          <div class="panel panel-default">
+              <div class="panel-heading">
+                  <div class="row">
+                      <div class="col-xs-3">
+                          <i class="fa fa-user fa-5x"></i>
+                      </div>
+                      <div class="col-xs-9 text-right">
+                          <div class="huge">
+                            @if ($allfaculty != NULL)
+                              {{$allfaculty}}
+                            @else 0
+                            @endif
+                          </div>
+                          <div>No. of Faculty</div>
+                      </div>
+                  </div>
+              </div>
+                  <div class="panel-footer">
+                      <span class="pull-left">View Details</span>
+                      <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                      <div class="clearfix"></div>
+                  </div>
+          </div>
+        </a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div  style="width: 380px;">
+        <a class="nav-link" data-toggle="tab" href="#panel11" role="tab">
+          <div class="panel panel-primary">
+              <div class="panel-heading">
+                  <div class="row">
+                      <div class="col-xs-3">
+                          <i class="fa fa-graduation-cap fa-5x"></i>
+                      </div>
+                      <div class="col-xs-9 text-right">
+                          <div class="huge">
+                            @if ($scholars != NULL)
+                              {{$scholars}}
+                            @else 0
+                            @endif
+                          </div>
+                          <div>Faculty Scholars</div>
+                      </div>
+                  </div>
+              </div>
+                  <div class="panel-footer">
+                      <span class="pull-left">View Details</span>
+                      <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                      <div class="clearfix"></div>
+                  </div>
+            </div>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <div  style="width: 380px;">
+          <a class="nav-link" data-toggle="tab" href="#panel12" role="tab">
+          <div class="panel panel-yellow">
+              <div class="panel-heading">
+                  <div class="row">
+                      <div class="col-xs-3">
+                          <i class="fa fa-university fa-5x"></i>
+                      </div>
+                      <div class="col-xs-9 text-right">
+                          <div class="huge">
+                            @if ($gradstudies != NULL)
+                              {{$gradstudies}}
+                            @else 0
+                            @endif
+                          </div>
+                          <div>Faculty in Graduate Studies</div>
+                      </div>
+                  </div>
+              </div>
+                  <div class="panel-footer">
+                      <span class="pull-left">View Details</span>
+                      <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                      <div class="clearfix"></div>
+                  </div>
+            </div>
+          </a>
+        </div>
+      </li>
+    </ul>
+<!-- 2nd row -->
+<ul class="nav nav-tabs md-pills pills-ins flex-center" role="tablist">
+    <li class="nav-item">
+      <div style="width: 380px;">
+        <a class="nav-link" data-toggle="tab" href="#panel13" role="tab">
+        <div class="panel panel-green">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-users fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">
+                          @if ($facultyPercentage != NULL)
+                            {{$facultyPercentage}}
+                          @else 0
+                          @endif%</div>
+                        <div>Faculty PD Attendees</div>
+                    </div>
+                </div>
+            </div>
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+          </a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div style="width: 380px;">
+        <a class="nav-link" data-toggle="tab" href="#panel14" role="tab">
+        <div class="panel panel-red">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa fa-book fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">
+                          @if ($numOfFacultyWithoutPD != NULL)
+                            {{$numOfFacultyWithoutPD}}
+                          @else 0
+                          @endif
+                        </div>
+                        <div>Faculties in Need of PD</div>
+                    </div>
+                </div>
+            </div>
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+          </a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <div style="width: 380px;">
+        <a class="nav-link" data-toggle="tab" href="#panel15" role="tab">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <i class="fa  fa-list-ul fa-5x"></i>
+                    </div>
+                    <div class="col-xs-9 text-right">
+                        <div class="huge">
+                          @if ($noOfPdActivities != NULL)
+                            {{$noOfPdActivities}}
+                          @else 0
+                          @endif
+                        </div>
+                        <div>No. of PD Activities</div>
+                    </div>
+                </div>
+            </div>
+                <div class="panel-footer">
+                    <span class="pull-left">View Details</span>
+                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+          </a>
+      </div>
+    </li>
+</ul>
+    <!-- /.2ndrow -->
+
+    <!-- Tab panels -->
+    <div class="tab-content">
+        <!--Panel 0-->
+        <div class="tab-pane fade in active" id="panel10" role="tabpanel">
+          <!--Panel-->
+          <div class="card">
+              <h6 class="card-header primary-default black-text">Faculty Roster</h6>
+              <div class="card-block">
+
+              </div>
+          </div>
+          <!--/.Panel-->
+        </div>
+        <!--/.Panel 0-->
+
+        <!--Panel 1-->
+        <div class="tab-pane fade" id="panel11" role="tabpanel">
+          <!--Panel-->
+          <div class="card">
+              <h6 class="card-header primary-color white-text">Faculty Scholars</h6>
+              <div class="card-block">
+
+              </div>
+          </div>
+          <!--/.Panel-->
+        </div>
+        <!--/.Panel 1-->
+
+        <!--Panel 2-->
+        <div class="tab-pane fade" id="panel12" role="tabpanel">
+          <!--Panel-->
+          <div class="card">
+              <h6 class="card-header warning-color white-text">Faculty in Graduate Studies</h6>
+              <div class="card-block">
+
+              </div>
+          </div>
+          <!--/.Panel-->
+        </div>
+        <!--/.Panel 2-->
+
+        <!--Panel 3-->
+        <div class="tab-pane fade" id="panel13" role="tabpanel">
+          <!--Panel-->
+          <div class="card">
+              <h6 class="card-header success-color white-text">Faculty with Professional Development Engagement</h6>
+              <div class="card-block">
+
+              </div>
+          </div>
+          <!--/.Panel-->
+        </div>
+        <!--/.Panel 3-->
+
+        <!--Panel 4-->
+        <div class="tab-pane fade" id="panel14" role="tabpanel">
+          <!--Panel-->
+          <div class="card">
+              <h6 class="card-header danger-color white-text">Faculty without Professional Development Engagement</h6>
+              <div class="card-block">
+
+              </div>
+          </div>
+          <!--/.Panel-->
+        </div>
+        <!--/.Panel 4-->
+
+        <!--Panel 5-->
+        <div class="tab-pane fade" id="panel15" role="tabpanel">
+          <!--Panel-->
+          <div class="card">
+              <h6 class="card-header info-color white-text">List of Professional Development Activities</h6>
+              <div class="card-block">
+
+              </div>
+          </div>
+          <!--/.Panel-->
+        </div>
+        <!--/.Panel 5-->
+    </div>
+
+<div class="row">
+  <!-- /.2ndrow -->
+  <div class="col-md-6">
+    <canvas id="pd" width="80" height="60"></canvas>
+  </div>
+  <div class="col-md-6">
+    <canvas id="faculty" width="80" height="60"></canvas>
+  </div>
+</div>
